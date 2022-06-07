@@ -14,8 +14,8 @@ const produtos = [
   },
   {
     _id: '2',
-    nome: 'Desodorante Natural de Capim Limão',
-    image: '/images/des-capimlimao.jpg',
+    nome: 'Hidratante 3 em 1',
+    image: '/images/manteiga.jpg',
     description:
       'Para obter eficiência, é portanto necessário o uso de tecnologias que transformam ingredientes naturais, como a tapioca, o óleo de coco e os óleos essenciais, em uma fórmula que em nada agride a saúde - ao contrário, funciona como um hidratante suave. \n\n Disponível sem perfume ou no nosso perfume cítrico favorito - o manuya lemon.',
     brand: 'Floresta Encantadora',
@@ -27,8 +27,8 @@ const produtos = [
   },
   {
     _id: '3',
-    nome: 'Desodorante Natural de Capim Limão',
-    image: '/images/des-capimlimao.jpg',
+    nome: 'Escalda Pés da Floresta',
+    image: '/images/escalda-pe.jpg',
     description:
       'Para obter eficiência, é portanto necessário o uso de tecnologias que transformam ingredientes naturais, como a tapioca, o óleo de coco e os óleos essenciais, em uma fórmula que em nada agride a saúde - ao contrário, funciona como um hidratante suave. \n\n Disponível sem perfume ou no nosso perfume cítrico favorito - o manuya lemon.',
     brand: 'Floresta Encantadora',
