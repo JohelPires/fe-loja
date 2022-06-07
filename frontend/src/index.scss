@@ -1,8 +1,33 @@
+$primary-text-color: #555;
+
 main {
     min-height: 80vh;
+    color: $primary-text-color;
+    a {
+        text-decoration: none;
+        color: $primary-text-color;
+    }
 }
 
+// ==== PRODUTO ====
+
+.tamanho-do-cartao-custom-css {
+    height: 390px;
+}
+.card-body {
+    padding: 0.5rem 0;
+}
 .nome-do-produto-no-card {
     margin: 0;
     padding: 0;
+}
+
+
+.estrelas-da-avaliação-do-produto {
+    font-size: 13px;
+    color: orange;
+    margin: 3px 0;
+    .texto-do-numero-de-revisoes-do-produto {
+        color: $primary-text-color;
+    }
 }

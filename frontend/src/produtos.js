@@ -35,7 +35,7 @@ const produtos = [
     category: 'Cosméticos Naturais',
     price: 22.9,
     countInStock: 20,
-    rating: 4.9,
+    rating: 4.4,
     numReviews: 4,
   },
   {
