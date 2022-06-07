@@ -34,7 +34,7 @@ const produtos = [
     brand: 'Floresta Encantadora',
     category: 'Cosméticos Naturais',
     price: 22.9,
-    countInStock: 20,
+    countInStock: 0,
     rating: 4.4,
     numReviews: 4,
   },
