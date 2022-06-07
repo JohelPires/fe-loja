@@ -1,0 +1,22 @@
+{
+  "name": "fe-loja",
+  "version": "1.0.0",
+  "description": "Floresta Encantadora Loja",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohelPires/fe-loja.git"
+  },
+  "author": "Johel Pires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohelPires/fe-loja/issues"
+  },
+  "homepage": "https://github.com/JohelPires/fe-loja#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
