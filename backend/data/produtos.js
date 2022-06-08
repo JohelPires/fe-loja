@@ -1,6 +1,5 @@
 const produtos = [
   {
-    _id: '1',
     nome: 'Desodorante Natural de Capim Limão',
     image: '/images/des-capimlimao.jpg',
     description:
@@ -13,7 +12,6 @@ const produtos = [
     numReviews: 4,
   },
   {
-    _id: '2',
     nome: 'Hidratante 3 em 1',
     image: '/images/manteiga.jpg',
     description:
@@ -26,7 +24,6 @@ const produtos = [
     numReviews: 4,
   },
   {
-    _id: '3',
     nome: 'Escalda Pés da Floresta',
     image: '/images/escalda-pe.jpg',
     description:
@@ -39,7 +36,6 @@ const produtos = [
     numReviews: 4,
   },
   {
-    _id: '4',
     nome: 'Desodorante Natural de Capim Limão',
     image: '/images/des-capimlimao.jpg',
     description:
@@ -52,7 +48,6 @@ const produtos = [
     numReviews: 4,
   },
   {
-    _id: '5',
     nome: 'Desodorante Natural de Capim Limão',
     image: '/images/des-capimlimao.jpg',
     description:
@@ -65,7 +60,6 @@ const produtos = [
     numReviews: 4,
   },
   {
-    _id: '6',
     nome: 'Desodorante Natural de Capim Limão',
     image: '/images/des-capimlimao.jpg',
     description:
