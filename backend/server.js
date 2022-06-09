@@ -8,7 +8,7 @@ import dotenv from 'dotenv'
 import path from 'path'
 import connectDB from './config/db.js'
 import productRoutes from './Routes/productRoutes.js'
-import { application } from 'express'
+// import { application } from 'express'
 
 const __dirname = path.resolve()
 
