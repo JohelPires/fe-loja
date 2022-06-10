@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 // import produtos from '../produtos'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useNavigate, Link } from 'react-router-dom'
 import {
   Col,
   Row,
@@ -10,6 +10,7 @@ import {
   ListGroupItem,
   Card,
   Button,
+  Form,
 } from 'react-bootstrap'
 import Rating from '../components/Rating'
 import { listProductDetails } from '../actions/productActions'
@@ -18,7 +19,10 @@ import Message from '../components/Message'
 
 function ProductScreen() {
   let { id } = useParams()
+  const navigate = useNavigate()
   // const produto = produtos.find((p) => p._id === id)
+
+  const [qtd, setQtd] = useState(0)
 
   const dispatch = useDispatch()
 
@@ -28,6 +32,10 @@ function ProductScreen() {
   useEffect(() => {
     dispatch(listProductDetails(id))
   }, [dispatch])
+
+  function addToCartHandler() {
+    navigate(`/cart/${id}?qtd=${qtd}`)
+  }
 
   return (
     <div>
@@ -85,8 +93,31 @@ function ProductScreen() {
                     </Col>
                   </Row>
                 </ListGroupItem>
+
+                {produto.countInStock > 0 && (
+                  <ListGroupItem>
+                    <Row>
+                      <Col>Quantidade:</Col>
+                      <Col>
+                        <Form.Control
+                          as='select'
+                          value={qtd}
+                          onChange={(e) => setQtd(e.target.value)}
+                        >
+                          {[...Array(produto.countInStock).keys()].map((x) => (
+                            <option key={x + 1} value={x + 1}>
+                              {x + 1}
+                            </option>
+                          ))}
+                        </Form.Control>
+                      </Col>
+                    </Row>
+                  </ListGroupItem>
+                )}
+
                 <ListGroupItem className='text-center'>
                   <Button
+                    onClick={addToCartHandler}
                     className='btn-block btn-success'
                     type='button'
                     disabled={produto.countInStock === 0}
