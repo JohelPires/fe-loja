@@ -7,6 +7,7 @@ router.get(
   '/',
   expressAsyncHandler(async (req, res) => {
     const produtos = await Produto.find({})
+    // throw new Error('some error')
     res.json(produtos)
   })
 )
