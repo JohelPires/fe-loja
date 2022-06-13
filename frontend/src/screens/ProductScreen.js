@@ -22,7 +22,7 @@ function ProductScreen() {
   const navigate = useNavigate()
   // const produto = produtos.find((p) => p._id === id)
 
-  const [qtd, setQtd] = useState(0)
+  const [qtd, setQtd] = useState(1)
 
   const dispatch = useDispatch()
 
