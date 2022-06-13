@@ -8,6 +8,7 @@ import dotenv from 'dotenv'
 import path from 'path'
 import connectDB from './config/db.js'
 import productRoutes from './Routes/productRoutes.js'
+import userRoutes from './Routes/userRoutes.js'
 // import { application } from 'express'
 
 const __dirname = path.resolve()
@@ -18,11 +19,14 @@ connectDB()
 
 const app = express()
 
+app.use(express.json())
+
 app.get('/', (req, res) => {
   res.send('API is running')
 })
 
 app.use('/api/produtos', productRoutes)
+app.use('/api/users', userRoutes)
 
 //====NOT FOUND=====
 app.use((req, res, next) => {
