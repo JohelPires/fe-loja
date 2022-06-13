@@ -1,4 +1,4 @@
-import { CART_ADD_ITEM } from '../constants/cartConstants'
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/cartConstants'
 
 import React from 'react'
 
@@ -23,7 +23,11 @@ function cartReducer(state = { cartItems: [] }, action) {
         }
       }
       break
-
+    case CART_REMOVE_ITEM:
+      return {
+        ...state,
+        cartItems: state.cartItems.filter((i) => i.produto !== action.payload),
+      }
     default:
       return state
       break

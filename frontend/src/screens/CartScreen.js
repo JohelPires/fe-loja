@@ -12,7 +12,7 @@ import {
 } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
-import addToCart from '../actions/cartActions'
+import { addToCart, removeFromCart } from '../actions/cartActions'
 
 function CartScreen() {
   let { id } = useParams()
@@ -35,7 +35,7 @@ function CartScreen() {
   }, [dispatch, id, qtd])
 
   function removeFromCartHandler(id) {
-    console.log('remove')
+    dispatch(removeFromCart(id))
   }
 
   function checkoutHandler() {
