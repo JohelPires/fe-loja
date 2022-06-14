@@ -25,4 +25,31 @@ const authUser = expressAsyncHandler(async (req, res) => {
   }
 })
 
-export { authUser }
+// @desc    get user profile
+// @route   GET /api/users/profile
+// @access  Private
+
+const getUserProfile = async (req, res) => {
+  res.send('Success')
+  // const user = await User.findById(req.user._id)
+  // try {
+  //   res.send(user.nome)
+  // } catch (error) {
+  //   res.status(404)
+  //   throw new Error('User not found' + error)
+  // }
+
+  //   if (user) {
+  //     res.json({
+  //       _id: user._id,
+  //       nome: user.nome,
+  //       email: user.email,
+  //       isAdmin: user.isAdmin,
+  //     })
+  //   } else {
+  //     res.status(404)
+  //     throw new Error('User not found')
+  //   }
+}
+
+export { authUser, getUserProfile }
